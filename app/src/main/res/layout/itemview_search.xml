@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/margin_smallest">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_small"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/strDrinkThumb"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            app:shapeAppearance="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/strCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Cocktail"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/strGlass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_smallest"
+                android:text="Martini Glass"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/strInstructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_smallest"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:text="Shake all the ingredients in a cocktail shaker and ice then strain in a cold glass."/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/expand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_smallest"
+                android:visibility="visible"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_smallest"
+                    android:text="Ingredient: "
+                    android:textStyle="bold"/>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/strIngredient1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_smallest"
+                    android:text="Gin, "/>
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/strIngredient2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_smallest"
+                    android:text="Grand Marnier, "/>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/strIngredient3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_smallest"
+                    android:text="Lemon Juice, "/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_smallest"
+                    android:text="Alcoholic: "/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/strAlcoholic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textSize="@dimen/text_size_smallest"
+                    android:textColor="@color/red"
+                    android:text="YES"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.google.android.material.card.MaterialCardView>

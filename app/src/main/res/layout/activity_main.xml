@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ViewSwitcher
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/switcher">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Search your favourite cocktail"
+                android:gravity="center" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/padding_medium"
+                tools:listitem="@layout/itemview_search"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        </ViewSwitcher>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_size_smallest">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_big">20sp</dimen>
+    <dimen name="text_size_bigger">25sp</dimen>
+
+    <dimen name="margin_smallest">5dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_medium">15dp</dimen>
+    <dimen name="margin_big">20dp</dimen>
+    <dimen name="margin_bigger">25dp</dimen>
+    <dimen name="extra_large_margin">50dp</dimen>
+    <dimen name="extra_extra_large_margin">100dp</dimen>
+
+    <dimen name="padding_smallest">5dp</dimen>
+    <dimen name="padding_small">10dp</dimen>
+    <dimen name="padding_medium">15dp</dimen>
+    <dimen name="padding_big">20dp</dimen>
+    <dimen name="padding_bigger">25dp</dimen>
+
+    <dimen name="radius_smallest">5dp</dimen>
+    <dimen name="radius_small">10dp</dimen>
+    <dimen name="radius_bigger">25dp</dimen>
+
+
+</resources>
